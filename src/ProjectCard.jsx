@@ -1,4 +1,5 @@
 import { useState } from "react";
+import githubCat from "./assets/github-mark-white.svg";
 
 const ProjectCard = ({ big, img, copy }) => {
   const [showDetes, setShowDetes] = useState(false);
@@ -25,9 +26,27 @@ const ProjectCard = ({ big, img, copy }) => {
       </div>
       <div
         className={`absolute w-full h-full top-0 left-0 ${
-          showDetes ? "visible" : "hidden"
-        } bg-emerald-950`}
-      ></div>
+          showDetes ? "opacity-1" : "opacity-0"
+        } bg-emerald-950 flex flex-col justify-center items-center gap-10 transition-opacity`}
+      >
+        <div className="flex gap-5 align-baseline justify-center items-center">
+          <img src={githubCat} alt="" className="w-[50%] h-[50%]" />
+          <a
+            href=""
+            className="text-emerald-200 font-bold text-center text-4xl"
+          >
+            Github
+          </a>
+        </div>
+        <div>
+          <a
+            href=""
+            className="text-emerald-200 font-bold text-center my-10 text-4xl"
+          >
+            Try Now
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
