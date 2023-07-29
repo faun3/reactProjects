@@ -15,8 +15,8 @@ const ProjectCard = ({ big, img, copy }) => {
   return (
     <div
       className={`bg-emerald-500 rounded-lg ${
-        big ? "basis-2/3" : "basis-1/3"
-      } relative overflow-hidden basis-full sm:min-w-[300px] min-h-[25rem]`}
+        big ? "md:basis-7/12 basis-full" : "md:basis-5/12 basis:full"
+      } relative overflow-hidden min-h-[25rem] w-full flex-1`}
       onMouseEnter={toggleDetes}
       onMouseLeave={hideDetes}
     >
