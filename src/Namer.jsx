@@ -1,5 +1,6 @@
 import galaxy from "./assets/galaxy.svg";
 import ProjectCard from "./ProjectCard";
+import img1 from "./assets/proj1imgTEMP.jpg";
 
 const Namer = () => {
   return (
@@ -23,9 +24,9 @@ const Namer = () => {
       </div>
       <div className="my-10">
         <p>A sneak peek of what I've worked on:</p>
-        <div className="flex flex-row gap-4 items-center justify-center my-10">
+        <div className="flex flex-row gap-10 items-center justify-center my-10 mx-10">
           <ProjectCard />
-          <ProjectCard big={true} />
+          <ProjectCard big={true} img={img1} copy={`This image is stolen!`} />
         </div>
       </div>
     </>
