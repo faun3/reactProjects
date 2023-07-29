@@ -23,7 +23,9 @@ const Namer = () => {
         </p>
       </div>
       <div className="my-10">
-        <p>A sneak peek of what I've worked on:</p>
+        <p className="text-3xl font-bold mt-20 text-center text-emerald-800">
+          A sneak peek of what I've worked on:
+        </p>
         <div className="flex flex-row gap-10 items-center justify-center my-10 mx-10">
           <ProjectCard />
           <ProjectCard big={true} img={img1} copy={`This image is stolen!`} />
