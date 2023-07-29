@@ -1,4 +1,5 @@
 import galaxy from "./assets/galaxy.svg";
+import ProjectCard from "./ProjectCard";
 
 const Namer = () => {
   return (
@@ -20,9 +21,12 @@ const Namer = () => {
           look at.
         </p>
       </div>
-      <div>
+      <div className="my-10">
         <p>A sneak peek of what I've worked on:</p>
-        <div className="bg-emerald-500 h-[50px] rounded-lg"></div>
+        <div className="flex flex-row gap-4 items-center justify-center my-10">
+          <ProjectCard />
+          <ProjectCard big={true} />
+        </div>
       </div>
     </>
   );
