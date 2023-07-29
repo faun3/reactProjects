@@ -1,10 +1,12 @@
 import Namer from "./Namer";
+import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="bg-slate-600">
+    <>
+      <Navbar />
       <Namer />
-    </div>
+    </>
   );
 }
 
