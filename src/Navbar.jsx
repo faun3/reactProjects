@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
-    <nav className="md:w-[50%] sm:w-full mx-auto my-10 rounded-full bg-slate-700 py-6 px-4">
+    <nav className="md:w-[50%] sm:w-full mx-auto my-10 rounded-full py-6 px-4 bg-[rgba(255,255,255,0.15)] backdrop-blur-sm z-[100]">
       <ul className="flex w-full gap-5 justify-between px-4">
-        <li className="hover:bg-slate-200">
+        <li className="hover:">
           <a href="">Projects</a>
         </li>
         <li>
