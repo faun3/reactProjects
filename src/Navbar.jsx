@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="md:w-[50%] sm:w-full mx-auto my-10 rounded-full py-6 px-4 bg-[rgba(255,255,255,0.25)] backdrop-blur-md z-[100] sticky top-5">
+    <nav className="md:w-[60%] w-[90%] md:mx-auto my-10 mx-auto rounded-full py-6 px-4 bg-[rgba(255,255,255,0.25)] backdrop-blur-md z-[100] sticky top-5">
       <ul className="flex w-full gap-5 justify-between px-4">
         <li className="hover:">
           <a href="">Projects</a>
