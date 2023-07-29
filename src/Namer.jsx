@@ -27,7 +27,7 @@ const Namer = () => {
           A sneak peek of what I've worked on:
         </p>
         <div className="flex flex-row gap-10 items-center justify-center my-10 mx-10">
-          <ProjectCard />
+          <ProjectCard copy={`sorry nothing`} />
           <ProjectCard big={true} img={img1} copy={`This image is stolen!`} />
         </div>
       </div>
