@@ -1,7 +1,7 @@
 import { useState } from "react";
 import githubCat from "./assets/github-mark-white.svg";
 
-const ProjectCard = ({ big, img, copy }) => {
+const ProjectCard = ({ big, img, copy, color }) => {
   const [showDetes, setShowDetes] = useState(false);
 
   function toggleDetes() {
@@ -12,9 +12,27 @@ const ProjectCard = ({ big, img, copy }) => {
     setShowDetes(false);
   }
 
+  const colors = {
+    emerald: {
+      bg: "bg-emerald-500",
+      detes: "bg-emerald-950",
+      text: "text-emerald-200",
+    },
+    cyan: {
+      bg: "bg-cyan-500",
+      detes: "bg-cyan-950",
+      text: "text-cyan-200",
+    },
+    pink: {
+      bg: "bg-pink-500",
+      detes: "bg-pink-950",
+      text: "text-pink-200",
+    },
+  };
+
   return (
     <div
-      className={`bg-emerald-500 rounded-lg ${
+      className={`${colors[color].bg} rounded-lg ${
         big ? "md:basis-7/12 basis-full" : "md:basis-5/12 basis:full"
       } relative overflow-hidden min-h-[25rem] w-full flex-1`}
       onMouseEnter={toggleDetes}
@@ -27,13 +45,15 @@ const ProjectCard = ({ big, img, copy }) => {
       <div
         className={`absolute w-full h-full top-0 left-0 ${
           showDetes ? "opacity-1" : "opacity-0"
-        } bg-emerald-950 flex flex-col justify-center items-center gap-10 transition-opacity`}
+        } ${
+          colors[color].detes
+        } flex flex-col justify-center items-center gap-10 transition-opacity`}
       >
         <div className="flex gap-5 align-baseline justify-center items-center">
           <img src={githubCat} alt="" className="w-[50%] h-[50%]" />
           <a
             href=""
-            className="text-emerald-200 font-bold text-center text-4xl"
+            className={`${colors[color].text} font-bold text-center text-4xl`}
           >
             Github
           </a>
@@ -41,7 +61,7 @@ const ProjectCard = ({ big, img, copy }) => {
         <div>
           <a
             href=""
-            className="text-emerald-200 font-bold text-center my-10 text-4xl"
+            className={`${colors[color].text} font-bold text-center my-10 text-4xl`}
           >
             Try Now
           </a>
