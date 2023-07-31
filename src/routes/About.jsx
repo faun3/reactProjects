@@ -1,10 +1,11 @@
 import Navbar from "../Navbar";
+import SectionIntro from "../SectionIntro";
 
 const About = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div>About</div>
+      <SectionIntro text={`All about me`}></SectionIntro>
     </>
   );
 };
