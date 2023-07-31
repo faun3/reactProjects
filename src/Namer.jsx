@@ -5,7 +5,7 @@ import SectionIntro from "./SectionIntro";
 const Namer = () => {
   return (
     <>
-      <SectionIntro />
+      <SectionIntro text={`Hi I'm [name]. I make websites and art.`} />
       <div className="my-5 mx-10">
         <p className="text-center text-3xl font-bold w-[60%] mx-auto text-slate-700">
           I am passionate about working on web apps that are a joy to use and to
