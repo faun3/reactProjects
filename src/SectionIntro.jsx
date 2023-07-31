@@ -1,10 +1,10 @@
 import galaxy from "./assets/galaxy.svg";
 
-const SectionIntro = () => {
+const SectionIntro = ({ text }) => {
   return (
     <section className="w-full relative">
       <h1 className="text-6xl text-center font-bold z-[2] text-slate-900 py-[12rem] relative">
-        Hi, I'm [name]. <br />I make web apps and art.
+        {text}
       </h1>
       <img
         alt=""
