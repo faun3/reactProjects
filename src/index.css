@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+  @apply p-3 border-slate-700 border-[2px] rounded-full transition-all;
+}
