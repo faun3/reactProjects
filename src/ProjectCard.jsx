@@ -1,7 +1,7 @@
 import { useState } from "react";
 import githubCat from "./assets/github-mark-white.svg";
 
-const ProjectCard = ({ big, img, copy, color }) => {
+const ProjectCard = ({ big, img, copy, color, full }) => {
   const [showDetes, setShowDetes] = useState(false);
 
   function toggleDetes() {
@@ -33,8 +33,10 @@ const ProjectCard = ({ big, img, copy, color }) => {
   return (
     <div
       className={`${colors[color].bg} rounded-lg ${
-        big ? "md:basis-7/12 basis-full" : "md:basis-5/12 basis:full"
-      } relative overflow-hidden min-h-[25rem] w-full flex-1`}
+        big ? "md:grow-[2] basis-2/3" : "md:grow md:max-w-[30%]"
+      } relative overflow-hidden min-h-[25rem] ${
+        full ? "min-w-[100%] grow" : ""
+      } basis-full w-full`}
       onMouseEnter={toggleDetes}
       onMouseLeave={hideDetes}
     >
