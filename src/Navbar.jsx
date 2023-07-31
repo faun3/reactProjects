@@ -5,18 +5,18 @@ const Navbar = () => {
         <li className="hover:">
           <a
             href=""
-            className="font-bold text-xl text-slate-900 rounded-full p-3 border-slate-700 border-[2px]"
+            className="font-bold md:text-xl text-slate-900 rounded-full p-3 border-slate-700 border-[2px]"
           >
             Projects
           </a>
         </li>
         <li>
-          <a href="" className="font-bold text-xl text-slate-700">
+          <a href="" className="font-bold md:text-xl text-slate-700">
             About
           </a>
         </li>
         <li>
-          <a href="" className="font-bold text-xl text-slate-700">
+          <a href="" className="font-bold md:text-xl text-slate-700">
             Contact
           </a>
         </li>
