@@ -9,21 +9,23 @@ import {
   createRoutesFromElements,
   createBrowserRouter,
   Route,
+  RouterProvider,
+  Routes,
 } from "react-router-dom";
 import Namer from "./Namer.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Routes>
+    <>
       <Route path="/" element={<App />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
-    </Routes>
+    </>
   )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
