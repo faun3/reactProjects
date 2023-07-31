@@ -3,7 +3,7 @@ import SectionIntro from "../SectionIntro";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="min-h-[100vh]">
       <Navbar></Navbar>
       <SectionIntro text={`All about me`}></SectionIntro>
     </div>

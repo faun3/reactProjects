@@ -9,7 +9,7 @@ const SectionIntro = ({ text }) => {
       <img
         alt=""
         src={galaxy}
-        className="absolute top-[50%] left-[50%] -translate-x-[50%] translate-y-[-50%] z-[1] fill-slate-300 stroke-slate-500 opacity-20 w-[150%] h-[100%] "
+        className="absolute top-[50%] left-[50%] -translate-x-[50%] translate-y-[-50%] z-[1] fill-slate-300 stroke-slate-500 opacity-20 w-[150%] h-[100%]"
       />
     </section>
   );
