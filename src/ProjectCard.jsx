@@ -33,8 +33,10 @@ const ProjectCard = ({ big, img, copy, color, full }) => {
   return (
     <div
       className={`${colors[color].bg} rounded-lg ${
-        big ? "md:grow-[2] basis-2/3" : "md:grow md:max-w-[30%]"
-      } relative overflow-hidden min-h-[25rem] ${
+        big
+          ? "md:basis-[calc((100%-5rem)*6/10)]"
+          : "md:basis-[calc((100%)*4/10)]"
+      } relative overflow-hidden min-h-[20rem] ${
         full ? "min-w-[100%] grow" : ""
       } basis-full w-full`}
       onMouseEnter={toggleDetes}
