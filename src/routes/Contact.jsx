@@ -3,7 +3,7 @@ import SectionIntro from "../SectionIntro";
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-400 to-slate-200">
+    <div className="">
       <Navbar />
       <SectionIntro text={`Let's get in touch`}></SectionIntro>
     </div>

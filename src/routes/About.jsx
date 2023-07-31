@@ -3,7 +3,7 @@ import SectionIntro from "../SectionIntro";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-400 to-slate-200">
+    <div className="">
       <Navbar></Navbar>
       <SectionIntro text={`All about me`}></SectionIntro>
     </div>
