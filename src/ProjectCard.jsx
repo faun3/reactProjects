@@ -52,10 +52,10 @@ const ProjectCard = ({ big, img, copy, color, full, hostedAt, githubLink }) => {
           showDetes ? "opacity-1" : "opacity-0"
         } ${
           colors[color].detes
-        } flex flex-col justify-center items-center gap-10 transition-opacity`}
+        } flex flex-col justify-center items-between transition-opacity`}
       >
         <div className="flex gap-5 align-baseline justify-center items-center">
-          <img src={githubCat} alt="" className="w-[50%] h-[50%]" />
+          <img src={githubCat} alt="" className="w-[50px] h-[50px]" />
           <a
             href={githubLink}
             className={`${colors[color].text} font-bold text-center text-4xl`}
@@ -63,11 +63,15 @@ const ProjectCard = ({ big, img, copy, color, full, hostedAt, githubLink }) => {
             Github
           </a>
         </div>
-        <div className="flex gap-2 align-baseline justify-center items-center">
-          <img src={linkIcon} alt="" className="max-w-[40%] max-h-[40%]" />
+        <div className="flex gap-2 align-baseline justify-center items-center mt-[2rem]">
+          <img
+            src={linkIcon}
+            alt=""
+            className="max-w-[50px] max-h-[50px] text-white filter invert"
+          />
           <a
             href={hostedAt}
-            className={`${colors[color].text} font-bold text-center my-10 text-4xl`}
+            className={`${colors[color].text} font-bold text-center text-4xl`}
           >
             Try Now
           </a>
