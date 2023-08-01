@@ -17,15 +17,21 @@ const Namer = () => {
           A sneak peek of what I've worked on:
         </p>
         <div className="flex flex-col gap-10 items-center md:flex-row flex-wrap justify-center mt-10 px-10 pb-10 min-w-full">
-          <ProjectCard copy={`nothing`} img={img1} color={"emerald"} />
           <ProjectCard
-            copy={`sorry nothing`}
+            copy={`portfolio`}
+            img={img1}
+            color={"emerald"}
+            githubLink={"https://github.com/faun3/reactProjects"}
+            hostedAt={"https://goinggoinggone.netlify.app"}
+          />
+          <ProjectCard
+            copy={`redux and express app`}
             img={img1}
             color={"pink"}
             big={true}
           />
           <ProjectCard
-            copy={`sorry nothing`}
+            copy={`fullstack next app (mongo, auth)`}
             img={img1}
             color={"cyan"}
             full={true}
