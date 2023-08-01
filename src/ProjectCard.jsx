@@ -1,5 +1,6 @@
 import { useState } from "react";
 import githubCat from "./assets/github-mark-white.svg";
+import linkIcon from "./assets/link-alt-1-svgrepo-com.svg";
 
 const ProjectCard = ({ big, img, copy, color, full, hostedAt, githubLink }) => {
   const [showDetes, setShowDetes] = useState(false);
@@ -62,7 +63,8 @@ const ProjectCard = ({ big, img, copy, color, full, hostedAt, githubLink }) => {
             Github
           </a>
         </div>
-        <div>
+        <div className="flex gap-2 align-baseline justify-center items-center">
+          <img src={linkIcon} alt="" className="max-w-[40%] max-h-[40%]" />
           <a
             href={hostedAt}
             className={`${colors[color].text} font-bold text-center my-10 text-4xl`}
