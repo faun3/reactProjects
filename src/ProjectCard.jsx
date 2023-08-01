@@ -1,7 +1,7 @@
 import { useState } from "react";
 import githubCat from "./assets/github-mark-white.svg";
 
-const ProjectCard = ({ big, img, copy, color, full }) => {
+const ProjectCard = ({ big, img, copy, color, full, hostedAt, githubLink }) => {
   const [showDetes, setShowDetes] = useState(false);
 
   function toggleDetes() {
@@ -56,7 +56,7 @@ const ProjectCard = ({ big, img, copy, color, full }) => {
         <div className="flex gap-5 align-baseline justify-center items-center">
           <img src={githubCat} alt="" className="w-[50%] h-[50%]" />
           <a
-            href=""
+            href={githubLink}
             className={`${colors[color].text} font-bold text-center text-4xl`}
           >
             Github
@@ -64,7 +64,7 @@ const ProjectCard = ({ big, img, copy, color, full }) => {
         </div>
         <div>
           <a
-            href=""
+            href={hostedAt}
             className={`${colors[color].text} font-bold text-center my-10 text-4xl`}
           >
             Try Now
