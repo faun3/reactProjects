@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "-100%" }}
+      initial={{ y: "100%" }}
+      animate={{ y: 0 }}
+      exit={{ y: "-100%" }}
       transition={{ duration: 0.2 }}
       className="min-h-[100vh]"
     >
