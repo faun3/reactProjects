@@ -28,31 +28,33 @@ const About = () => {
       <div className="flex flex-col justify-center my-6 items-center gap-6">
         <iframe
           src="https://open.spotify.com/embed/track/4mZofk9oND0AA4sJfzTH0R?utm_source=generator"
-          width="60%"
+          width="95%"
           height="152"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          className="md:w-[60%] mx-10"
         ></iframe>
         <iframe
           src="https://open.spotify.com/embed/track/1WhIXXx1mFS8GGPWtr4hTB?utm_source=generator"
-          width="60%"
+          width="95%"
           height="152"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
-          className="rounded-lg"
+          className="md:w-[60%] mx-10"
         ></iframe>
         <iframe
           src="https://open.spotify.com/embed/track/75xJvGP16xh4Jw5CnFtCyy?utm_source=generator"
-          width="60%"
+          width="95%"
           height="152"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          className="md:w-[60%] mx-10"
         ></iframe>
       </div>
     </motion.div>
